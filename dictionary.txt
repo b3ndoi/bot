@@ -2,4 +2,5 @@ for_me for_me
 ne_hvala ne hvala
 help help
 zdravo zdravo
-hello hi hello
+hello hi
+hello hello
