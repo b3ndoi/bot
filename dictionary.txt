@@ -3,6 +3,7 @@ ne_hvala ne hvala
 help help
 zdravo zdravo
 hello hi
+hello get started
 hello hello
 super super
 super good
