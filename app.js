@@ -57,8 +57,9 @@ app.post('/webhook', function (req, res) {
                 } else {
                     console.log("Handler " + result.handler + " is not defined");
                 }
-            }
+            }else{
           receivedMessage(event);
+            }
         }else if(event.postback){
           receivedPostback(event);
         } else {

@@ -13,6 +13,24 @@ exports.sendTextMessage = function (recipientId, messageText) {
 
   sendAPI(messageData);
 }
+exports.sendTextMessageWithImage = function (recipientId, img_url) {
+  var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      "attachment":{
+        "type":"image", 
+        "payload":{
+          "url": img_url, 
+          "is_reusable":true
+        }
+      }
+    }
+  };
+
+  sendAPI(messageData);
+}
 exports.sendOptionMessage = function (recipientId, messageText, broj, nedelja_trudnoce) {
   console.log(messageText);
   console.log(broj);

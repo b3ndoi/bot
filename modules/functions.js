@@ -39,9 +39,10 @@ exports.zdravo = (senderID, values)=>{
 
 exports.hello = (senderID, values)=>{
   
-    
-  messages.sendTextMessage(senderID, "Hello Mr Naghi! \n I'm Cody the 5th element of this team! Nice to meet you. \n How are you?");
-    
+  messages.sendTextMessageWithImage(senderID, "http://chat-bot.rs/assets/images/1920/chatbot_pitanja.png");
+  setTimeout(function () {
+    messages.sendTextMessage(senderID, "Hello Mr Naghi! \n I'm Cody the 5th element of this team! Nice to meet you. \n How are you?");
+  }, 500);
 };
 
 
