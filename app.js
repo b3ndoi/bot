@@ -187,7 +187,7 @@ function receivedMessage(event) {
         }
         default:
           if(!message.quick_reply){
-          messages.sendTextMessage(senderID, 'Napišite "zdravo" da bi ste započeli...');}
+          }
 
       }
     
