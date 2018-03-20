@@ -12,3 +12,5 @@ super well
 bad so so
 bad not so good
 bad bad
+yes yes
+no no
