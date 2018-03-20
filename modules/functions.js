@@ -62,3 +62,17 @@ exports.bad = (senderID, values)=>{
     messages.sendChoiceMessage(senderID,"Do you have any questions for me?","Yes","No");
   }, 500);
 };
+
+exports.yes = (senderID, values)=>{
+  
+    
+  messages.sendTextMessage(senderID, "Shoot!");
+
+};
+
+exports.no = (senderID, values)=>{
+  
+    
+  messages.sendTextMessage(senderID, "Enjoy your stay in Belgrade!");
+  
+};
