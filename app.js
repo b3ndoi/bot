@@ -187,8 +187,9 @@ function receivedMessage(event) {
           break;
         }
         default:
-          if(!message.quick_reply){
-          }
+          
+          messages.sendTextMessage(senderID, "I'm still young, but I'm sure that my team mates will assist.");
+          
 
       }
     
