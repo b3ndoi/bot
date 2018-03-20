@@ -43,3 +43,22 @@ exports.hello = (senderID, values)=>{
   messages.sendTextMessage(senderID, "Hello Mr Naghi! \n I'm Cody the 5th element of this team! Nice to meet you. \n How are you?");
     
 };
+
+
+exports.super = (senderID, values)=>{
+  
+    
+  messages.sendTextMessage(senderID, "Glad to hear that. Enjoy your stay in Belgrade!");
+  setTimeout(function () {
+    messages.sendChoiceMessage(senderID,"Do you have any questions for me?","Yes","No");
+  }, 500);
+};
+
+exports.bad = (senderID, values)=>{
+  
+    
+  messages.sendTextMessage(senderID, "I'm sorry to hear that. Hope you will change your mood soon. \n Enjoy your stay in Belgrade!");
+  setTimeout(function () {
+    messages.sendChoiceMessage(senderID,"Do you have any questions for me?","Yes","No");
+  }, 500);
+};
