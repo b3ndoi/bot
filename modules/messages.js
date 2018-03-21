@@ -13,7 +13,7 @@ exports.sendTextMessage = function (recipientId, messageText) {
 
   sendAPI(messageData);
 }
-exports.sendTextMessageWithImage = function (recipientId, img_url, callback) {
+exports.sendTextMessageWithImage = function (recipientId, img_url) {
   var messageData = {
     recipient: {
       id: recipientId
@@ -29,9 +29,7 @@ exports.sendTextMessageWithImage = function (recipientId, img_url, callback) {
     }
   };
   
-  if(sendAPI(messageData)){
-  callback();
-  }
+  sendAPI(messageData)
 }
 exports.sendOptionMessage = function (recipientId, messageText, broj, nedelja_trudnoce) {
   console.log(messageText);

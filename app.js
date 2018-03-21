@@ -89,17 +89,12 @@ function receivedPostback(event){
 
     
       
-    messages.sendTextMessageWithImage(senderID, "http://chat-bot.rs/assets/images/1920/ko_je_kodi_1920x1080.png", function(){
+    messages.sendTextMessageWithImage(senderID, "http://chat-bot.rs/assets/images/1920/ko_je_kodi_1920x1080.png");
+    setTimeout(() => {
       messages.sendTextMessage(senderID, "Hello Mr Naghi! \n I'm Cody the 5th element of this team! Nice to meet you. \n How are you?");
-    });
+    }, 2500);
+    
      
-    
-      
-      
-    
-      
-    
-
   }
   else if(payload.substring(13, payload.length) == 'ocekivanja'){
 
