@@ -13,7 +13,7 @@ exports.sendTextMessage = function (recipientId, messageText) {
 
   sendAPI(messageData);
 }
-exports.sendTextMessageWithImage = function (recipientId, img_url) {
+exports.sendTextMessageWithImage = function (recipientId, img_url, callback) {
   var messageData = {
     recipient: {
       id: recipientId
@@ -28,8 +28,8 @@ exports.sendTextMessageWithImage = function (recipientId, img_url) {
       }
     }
   };
-
-  return sendAPI(messageData);
+  callback();
+  sendAPI(messageData);
 
   
 }
