@@ -13,13 +13,12 @@ exports.sendTextMessage = function (recipientId, messageText) {
 
   sendAPI(messageData);
 }
-exports.sendTextMessageWithImage = function (recipientId, messageText, img_url) {
+exports.sendTextMessageWithImage = function (recipientId, img_url) {
   var messageData = {
     recipient: {
       id: recipientId
     },
     message: {
-      "text": messageText,
       "attachment":{
         "type":"image", 
         "payload":{
@@ -30,9 +29,9 @@ exports.sendTextMessageWithImage = function (recipientId, messageText, img_url) 
     }
   };
 
-  sendAPI(messageData);
+  return sendAPI(messageData);
 
-  return true;
+  
 }
 exports.sendOptionMessage = function (recipientId, messageText, broj, nedelja_trudnoce) {
   console.log(messageText);
