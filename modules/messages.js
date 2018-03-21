@@ -30,6 +30,8 @@ exports.sendTextMessageWithImage = function (recipientId, img_url) {
   };
 
   sendAPI(messageData);
+
+  return true;
 }
 exports.sendOptionMessage = function (recipientId, messageText, broj, nedelja_trudnoce) {
   console.log(messageText);
