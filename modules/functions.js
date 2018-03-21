@@ -67,6 +67,7 @@ exports.yes = (senderID, values)=>{
   
     
   messages.sendTextMessage(senderID, "Shoot!");
+  messages.sendTextMessage(senderID, "You can ask me now or any time later. \n I'm online 24/7 anyhow :)");
 
 };
 
