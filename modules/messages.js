@@ -13,12 +13,13 @@ exports.sendTextMessage = function (recipientId, messageText) {
 
   sendAPI(messageData);
 }
-exports.sendTextMessageWithImage = function (recipientId, img_url) {
+exports.sendTextMessageWithImage = function (recipientId, messageText, img_url) {
   var messageData = {
     recipient: {
       id: recipientId
     },
     message: {
+      "text": messageText,
       "attachment":{
         "type":"image", 
         "payload":{
