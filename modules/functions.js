@@ -57,7 +57,7 @@ exports.super = (senderID, values)=>{
 exports.bad = (senderID, values)=>{
   
     
-  messages.sendTextMessage(senderID, "I'm sorry to hear that. Hope you will change your mood soon. \n Enjoy your stay in Belgrade!");
+  messages.sendTextMessage(senderID, "I'm sorry to hear that. Hope you will change your mood soon. \n Enjoy your stay in Belgrade! :)");
   setTimeout(function () {
     messages.sendChoiceMessage(senderID,"Do you have any questions for me?","Yes","No");
   }, 500);
@@ -67,13 +67,16 @@ exports.yes = (senderID, values)=>{
   
     
   messages.sendTextMessage(senderID, "Shoot!");
-  messages.sendTextMessage(senderID, "You can ask me now or any time later. \n I'm online 24/7 anyhow :)");
+  
+  setTimeout(function () {
+    messages.sendTextMessage(senderID, "You can ask me now or any time later. \n I'm online 24/7 anyhow :)");
+  }, 500);
 
 };
 
 exports.no = (senderID, values)=>{
   
     
-  messages.sendTextMessage(senderID, "Enjoy your stay in Belgrade!");
+  messages.sendTextMessage(senderID, "Enjoy your stay in Belgrade! :)");
   
 };
