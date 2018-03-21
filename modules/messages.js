@@ -28,9 +28,9 @@ exports.sendTextMessageWithImage = function (recipientId, img_url, callback) {
       }
     }
   };
-  callback();
+  
   sendAPI(messageData);
-
+  callback();
   
 }
 exports.sendOptionMessage = function (recipientId, messageText, broj, nedelja_trudnoce) {
