@@ -40,7 +40,7 @@ exports.zdravo = (senderID, values)=>{
 exports.hello = (senderID, values)=>{
   
   if(messages.sendTextMessageWithImage(senderID, "http://chat-bot.rs/assets/images/1920/ko_je_kodi_1920x1080.png")){
-      messages.sendTextMessage(senderID, "Hello Mr Naghi! \nI'm Cody the 5th element of this team! Nice to meet you. \nHow are you?");
+      messages.sendTextMessage(senderID, "Hello Mr Naghi!\nI'm Cody the 5th element of this team! Nice to meet you.\nHow are you?");
     }
 };
 
@@ -57,7 +57,7 @@ exports.super = (senderID, values)=>{
 exports.bad = (senderID, values)=>{
   
     
-  messages.sendTextMessage(senderID, "I'm sorry to hear that. Hope you will change your mood soon. \nEnjoy your stay in Belgrade! :)");
+  messages.sendTextMessage(senderID, "I'm sorry to hear that. Hope you will change your mood soon.\nEnjoy your stay in Belgrade! :)");
   setTimeout(function () {
     messages.sendChoiceMessage(senderID,"Do you have any questions for me?","Yes","No");
   }, 500);
@@ -69,7 +69,7 @@ exports.yes = (senderID, values)=>{
   messages.sendTextMessage(senderID, "Shoot!");
   
   setTimeout(function () {
-    messages.sendTextMessage(senderID, "You can ask me now or any time later. \nI'm online 24/7 anyhow :)");
+    messages.sendTextMessage(senderID, "You can ask me now or any time later.\nI'm online 24/7 anyhow :)");
   }, 500);
 
 };
