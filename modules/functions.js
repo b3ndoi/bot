@@ -39,16 +39,17 @@ exports.zdravo = (senderID, values)=>{
 
 exports.hello = (senderID, values)=>{
   
-  if(messages.sendTextMessageWithImage(senderID, "http://chat-bot.rs/assets/images/1920/ko_je_kodi_1920x1080.png")){
-      messages.sendTextMessage(senderID, "Hello Mr Naghi!\nI'm Cody the 5th element of this team! Nice to meet you.\nHow are you?");
-    }
+  messages.sendTextMessageWithImage(senderID, "http://chat-bot.rs/assets/images/1920/ko_je_kodi_1920x1080.png");
+    setTimeout(() => {
+      messages.sendTextMessage(senderID, "Hello Mr Naghi! \n I'm Cody the 5th element of this team! Nice to meet you. \n How are you?");
+    }, 2500);
 };
 
 
 exports.super = (senderID, values)=>{
   
     
-  messages.sendTextMessage(senderID, "Glad to hear that. Enjoy your stay in Belgrade!");
+  messages.sendTextMessage(senderID, "Glad to hear that. Enjoy your stay in Belgrade! :)");
   setTimeout(function () {
     messages.sendChoiceMessage(senderID,"Do you have any questions for me?","Yes","No");
   }, 500);
